@@ -735,7 +735,7 @@ const DATA = {
   // ── Regions (Towns) ──────────────────────────────────────────
   regions: {
     desolated_town: {
-      name: "Desolated Town",
+      name: "Desolate Town",
       description: "Your starting area. A dead residential zone.",
       travelAP: 0,
       locations: ["convenience_store", "hospital_wing", "pharmacy", "residential", "church"]

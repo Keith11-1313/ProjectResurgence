@@ -35,7 +35,7 @@ const GameEngine = {
         };
 
         // Opening narrative
-        this.addLog(`Day 1: The sirens stopped. The neighbors are... different now. You find an abandoned townhouse on the edge of desolated town. It's cold, but it's yours. For now.`);
+        this.addLog(`Day 1: The sirens stopped. The neighbors are... different now. You find an abandoned townhouse on the edge of the desolate town. It's cold, but it's yours. For now.`);
         this.addLog(`You are ${character.name}, age ${character.age}. ${character.professionFlavor}`);
 
         Storage.saveGame(this.state);
