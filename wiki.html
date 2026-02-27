@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wiki for Project Resurgence: The Silent Zone.">
+    <title>Wiki - Project Resurgence</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/wiki.css">
+</head>
+
+<body>
+    <div id="wiki-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>Project Resurgence</h2>
+                <span>THE WIKI</span>
+            </div>
+            <nav class="wiki-nav">
+                <a href="#core-mechanics">1. Core Mechanics</a>
+                <a href="#stats-infection">2. Stats & Infection</a>
+                <a href="#professions">3. Professions</a>
+                <a href="#shelter-crafting">4. Shelter & Crafting</a>
+                <a href="#scavenging-combat">5. Scavenging & Combat</a>
+                <a href="#items-gear">6. Items & Gear</a>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="index.html" class="back-btn">← Back to Title</a>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="wiki-content">
+            <header class="wiki-header">
+                <h1>Survival Guide</h1>
+                <p>Knowledge is your only advantage in the Silent Zone. Learn the mechanics, manage your resources, and
+                    stay alive.</p>
+            </header>
+
+            <section id="core-mechanics">
+                <h2>1. Core Mechanics</h2>
+                <div class="mechanic-card">
+                    <h4>The Day/Night Cycle</h4>
+                    <p>Survival is divided into two phases. During the <strong>Day</strong>, you have <strong>24 Action
+                            Points (AP)</strong> to spend. You use AP to craft, build shelter upgrades, rest, or travel
+                        to scavenge. Once you run out of AP, you must end the day.</p>
+                </div>
+                <div class="mechanic-card">
+                    <h4>The Night</h4>
+                    <p>The <strong>Night</strong> is when the world pushes back. As the day ends, you automatically
+                        consume food and water (increasing Hunger and Thirst). Unpatched windows may cause sickness, and
+                        the infected or desperate survivors might raid your shelter. Random events also occur, testing
+                        your Sanity.</p>
+                </div>
+            </section>
+
+            <section id="stats-infection">
+                <h2>2. Stats & Infection</h2>
+                <div class="mechanic-card">
+                    <h4>Core Stats</h4>
+                    <ul>
+                        <li><strong class="color-health">Health:</strong> Determines if you survive encounters. Dropping
+                            to 0 means death.</li>
+                        <li><strong class="color-sanity">Sanity:</strong> Affected by your actions. High sanity helps
+                            you endure, while low sanity leads to madness.</li>
+                        <li><strong class="color-hunger">Hunger:</strong> Drains by 15 every night. If it hits 0, you
+                            take Health and Sanity damage from starvation.</li>
+                        <li><strong class="color-thirst">Thirst:</strong> Drains by 20 every night. If it hits 0, you
+                            take massive Health and Sanity damage from dehydration.</li>
+                    </ul>
+                </div>
+                <div class="mechanic-card">
+                    <h4>Infection & Mutations</h4>
+                    <p>Infection rises when you take damage from shamblers or consume dirty food/water. As infection
+                        crosses certain thresholds, your body mutates:</p>
+                    <ul>
+                        <li><strong>10% - Heightened Senses:</strong> +10% Scavenge bonus.</li>
+                        <li><strong>30% - Unnatural Strength:</strong> Stronger in combat, but drains Sanity over time.
+                        </li>
+                        <li><strong>50% - Night Vision:</strong> Better nocturnal awareness.</li>
+                        <li><strong>70% - Feral Instincts:</strong> Faster reflexes, but a heavy toll on the mind.</li>
+                        <li><strong>90% - The Change:</strong> A 3-day countdown begins before you mutate completely.
+                        </li>
+                        <li><strong class="color-health">100% - Lost:</strong> Game Over. You have turned.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="professions">
+                <h2>3. Professions</h2>
+                <p>When you start a new game, you're assigned a random profession based on your past life. Each offers
+                    unique stat modifiers and starting items.</p>
+
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h5>Unemployed</h5>
+                        <p>No special skills, but nothing to unlearn either.</p>
+                        <div class="data-tags"></div>
+                        <p class="prof-starts">Starts with: Energy Bar, Clean Water, Dead Phone</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Fire Officer</h5>
+                        <p>Trained to run toward danger. Physically elite.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+2 Strength</span>
+                            <span class="data-tag">+3 Endurance</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Fire Axe, Bandage, Clean Water</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Police Officer</h5>
+                        <p>Armed response training. You came prepared.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+1 Strength</span>
+                            <span class="data-tag">+2 Dexterity</span>
+                            <span class="data-tag">+1 Endurance</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Pistol, 9mm Rounds (x6), Baton, Flashlight</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Nurse</h5>
+                        <p>Medical training keeps others alive. You start with supplies.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+3 Intelligence</span>
+                            <span class="data-tag">+1 Endurance</span>
+                            <span class="data-tag">+1 Dexterity</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Medkit, Bandage, Bandage, Clean Water</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Construction Worker</h5>
+                        <p>You know how to build. And how to break.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+3 Strength</span>
+                            <span class="data-tag">+2 Endurance</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Crowbar, Scrap Metal (x3), Wood (x2), Box of Nails</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Mechanic</h5>
+                        <p>If it has moving parts, you can fix it. Or weaponize it.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+2 Strength</span>
+                            <span class="data-tag">+2 Dexterity</span>
+                            <span class="data-tag">+1 Intelligence</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Wrench, Scrap Metal (x3), Scrap Metal (x3), Duct Tape</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Chef</h5>
+                        <p>You can make anything edible. A rare gift in the wasteland.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+1 Intelligence</span>
+                            <span class="data-tag">+2 Endurance</span>
+                            <span class="data-tag">+1 Sanity</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Kitchen Knife, Canned Food, Canned Food, Spices, Rice (1
+                            Cup)</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Farmer</h5>
+                        <p>Hands in the earth. Back of steel. You know how to endure.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+1 Strength</span>
+                            <span class="data-tag">+3 Endurance</span>
+                            <span class="data-tag">+1 Sanity</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Hatchet, Canned Food, Rope (3m), Clean Water</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Security Guard</h5>
+                        <p>Trained to watch, wait, and act. The night shift prepared you.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+2 Strength</span>
+                            <span class="data-tag">+1 Dexterity</span>
+                            <span class="data-tag">+2 Endurance</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Baton, Flashlight, Bandage</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Electrician</h5>
+                        <p>Wire, circuits, power. You understand systems others don't.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+3 Intelligence</span>
+                            <span class="data-tag">+2 Dexterity</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Wrench, Duct Tape, Scrap Metal (x3), Flashlight</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Burglar</h5>
+                        <p>Quick hands, quiet feet. You've always taken what you needed.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+3 Dexterity</span>
+                            <span class="data-tag">+1 Intelligence</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Lockpick Set, Flashlight, Backpack, Broken Bottle</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Veteran</h5>
+                        <p>Combat-hardened. The battlefield changed, the training didn't.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+2 Strength</span>
+                            <span class="data-tag">+2 Dexterity</span>
+                            <span class="data-tag">+2 Endurance</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Machete, Bandage, Clean Water, Energy Bar</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Student</h5>
+                        <p>Young, adaptable, and desperate. The future was supposed to be yours.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+2 Dexterity</span>
+                            <span class="data-tag">+1 Intelligence</span>
+                            <span class="data-tag">+1 Sanity</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Backpack, Energy Bar, Dead Phone</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Teacher</h5>
+                        <p>Knowledge is survival. You can make something from nothing.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+3 Intelligence</span>
+                            <span class="data-tag">+2 Sanity</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Notebook, Clean Water, Canned Food</p>
+                    </div>
+                    <div class="data-card">
+                        <h5>Park Ranger</h5>
+                        <p>Wilderness training and survival instincts. You know the land.</p>
+                        <div class="data-tags">
+                            <span class="data-tag">+1 Strength</span>
+                            <span class="data-tag">+1 Dexterity</span>
+                            <span class="data-tag">+2 Endurance</span>
+                            <span class="data-tag">+1 Intelligence</span>
+                        </div>
+                        <p class="prof-starts">Starts with: Hatchet, Rope (3m), Flashlight, Clean Water</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="shelter-crafting">
+                <h2>4. Shelter & Crafting</h2>
+                <div class="mechanic-card">
+                    <h4>Shelter Actions</h4>
+                    <ul>
+                        <li><strong>Clean Debris (4 AP):</strong> Scrounge the rubble for scrap, wood, or cloth.</li>
+                        <li><strong>Patch Windows (6 AP, 2 Wood):</strong> Boarding up windows reduces sickness from the
+                            cold and lowers night raid risks.</li>
+                        <li><strong>Rest (8 AP):</strong> Spend time resting to recover Health and Sanity.</li>
+                    </ul>
+                </div>
+                <div class="mechanic-card">
+                    <h4>Key Upgrades</h4>
+                    <ul>
+                        <li><strong>Improvised Bench:</strong> Unlocks crafting for basic tools, bandages, and makeshift
+                            weapons.</li>
+                        <li><strong>Alcohol Stove:</strong> Safely cook food and boil dirty water to prevent infection.
+                        </li>
+                        <li><strong>Rain Collector & Water Filter:</strong> Automates gathering and purifying drinking
+                            water.</li>
+                        <li><strong>Barricade & Lookout Post:</strong> Drastically prevents the odds of your belongings
+                            getting stolen during night raids.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="scavenging-combat">
+                <h2>5. Scavenging & Combat</h2>
+                <p>Spending AP allows you to travel to different locations within regions like Desolate Town, Industrial
+                    Zone, or the Military Checkpoints. Each area varies in Danger Level and loot tables.</p>
+                <div class="mechanic-card">
+                    <h4>Encounters</h4>
+                    <p>While scavenging, you will face text-based encounters involving shamblers, trapped survivors, or
+                        rival looters. Your choices determine the outcome:</p>
+                    <ul>
+                        <li><strong>Strength Checks:</strong> Used to fight or force things open. Boosted by your
+                            character stats and equipped weapons.</li>
+                        <li><strong>Dexterity Checks:</strong> Used to sneak, dodge, or pick locks.</li>
+                        <li><strong>Intelligence Checks:</strong> Used for dialogue, discovering complex solutions, or
+                            careful extraction.</li>
+                    </ul>
+                </div>
+                <div class="mechanic-card">
+                    <h4>Combat & Weapons</h4>
+                    <p>Without a weapon, fighting gives poor odds. Melee weapons (Bats, Machetes, Fire Axes) provide
+                        steady combat bonuses. Firearms (Pistols, Shotguns) provide massive life-saving bonuses but
+                        require extremely rare ammunition.</p>
+                </div>
+            </section>
+
+            <section id="items-gear">
+                <h2>6. Items & Gear</h2>
+                <ul>
+                    <li><strong>Food:</strong> Range from Canned Food to Rat Meat (which must be cooked). Consuming raw
+                        rat meat heavily increases infection risk.</li>
+                    <li><strong>Water:</strong> Dirty Water must be boiled using an Alcohol Stove; drinking it raw is
+                        dangerous. Drink Clean Water to restore thirst safely.</li>
+                    <li><strong>Medical:</strong> Bandages stop bleeding, Medkits restore huge Health, and
+                        Antibiotics/Antivirals cure Infection over time.</li>
+                    <li><strong>Scrap & Materials:</strong> Essential for building upgrades. Scrap Metal, Wood, Duct
+                        Tape, and Nails form the backbone of your survival.</li>
+                </ul>
+
+                <h3 style="color: #fff; margin-top: 2rem; margin-bottom: 1rem;">Weapons</h3>
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h5>Crowbar</h5>
+                        <p>Heavy, reliable. Opens doors too.</p>
+                        <div class="data-tags"><span class="data-tag">+15 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Wrench</h5>
+                        <p>Not ideal, but it'll crack a skull.</p>
+                        <div class="data-tags"><span class="data-tag">+10 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Kitchen Knife</h5>
+                        <p>Sharp. Practical. Terrifying.</p>
+                        <div class="data-tags"><span class="data-tag">+12 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Baton</h5>
+                        <p>Standard issue. Still effective.</p>
+                        <div class="data-tags"><span class="data-tag">+13 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Machete</h5>
+                        <p>Cuts through brush. And bone.</p>
+                        <div class="data-tags"><span class="data-tag">+20 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Lead Pipe</h5>
+                        <p>Crude, but it hits hard.</p>
+                        <div class="data-tags"><span class="data-tag">+8 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Baseball Bat</h5>
+                        <p>Aluminum. Dented, but swings true.</p>
+                        <div class="data-tags"><span class="data-tag">+14 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Fire Axe</h5>
+                        <p>Red and heavy. Breaks doors and skulls alike.</p>
+                        <div class="data-tags"><span class="data-tag">+22 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Broken Bottle</h5>
+                        <p>Jagged glass. Desperate, but sharp.</p>
+                        <div class="data-tags"><span class="data-tag">+6 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Katana</h5>
+                        <p>Display sword from a collector. Surprisingly sharp.</p>
+                        <div class="data-tags"><span class="data-tag">+25 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Golf Club</h5>
+                        <p>A 9-iron. Good for distance swings.</p>
+                        <div class="data-tags"><span class="data-tag">+11 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Hatchet</h5>
+                        <p>Small axe. Quick and deadly.</p>
+                        <div class="data-tags"><span class="data-tag">+18 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Pistol</h5>
+                        <p>9mm semi-auto. Loud, but lethal.</p>
+                        <div class="data-tags"><span class="data-tag">+30 Combat</span><span
+                                class="data-tag">Firearm</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Revolver</h5>
+                        <p>.38 Special. Six shots. Make them count.</p>
+                        <div class="data-tags"><span class="data-tag">+28 Combat</span><span
+                                class="data-tag">Firearm</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Shotgun</h5>
+                        <p>Pump-action. Devastating up close.</p>
+                        <div class="data-tags"><span class="data-tag">+40 Combat</span><span
+                                class="data-tag">Firearm</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Hunting Rifle</h5>
+                        <p>Bolt-action. Patient kills.</p>
+                        <div class="data-tags"><span class="data-tag">+35 Combat</span><span
+                                class="data-tag">Firearm</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Improvised Spear</h5>
+                        <p>Kitchen knife lashed to a stick. Crude but keeps distance.</p>
+                        <div class="data-tags"><span class="data-tag">+12 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Nail Club</h5>
+                        <p>Wood studded with nails. Ugly. Effective.</p>
+                        <div class="data-tags"><span class="data-tag">+10 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Glass Shiv</h5>
+                        <p>Bottle shard wrapped in cloth. Desperate.</p>
+                        <div class="data-tags"><span class="data-tag">+7 Combat</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Makeshift Axe</h5>
+                        <p>Scrap blade bound to a handle. Better than nothing.</p>
+                        <div class="data-tags"><span class="data-tag">+15 Combat</span></div>
+                    </div>
+                </div>
+
+                <h3 style="color: #fff; margin-top: 3rem; margin-bottom: 1rem;">Medical Supplies</h3>
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h5>Medkit</h5>
+                        <p>Professional-grade. Precious.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-infection)">+35
+                                Health</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Bandage</h5>
+                        <p>Stops the bleeding, at least.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-infection)">+15
+                                Health</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Antibiotics</h5>
+                        <p>Worth more than gold now.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-health)">-20%
+                                Infection</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Antiviral</h5>
+                        <p>Experimental. Might save your humanity.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-health)">-40%
+                                Infection</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Painkillers</h5>
+                        <p>Dulls the pain. Dulls everything.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-infection)">+10
+                                Health</span><span class="data-tag" style="color:var(--color-sanity)">+5 Sanity</span>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Medicinal Herbs</h5>
+                        <p>Bitter tea, but it helps.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-infection)">+8
+                                Health</span></div>
+                    </div>
+                </div>
+
+                <h3 style="color: #fff; margin-top: 3rem; margin-bottom: 1rem;">Food & Water</h3>
+                <h4 style="color: var(--wiki-muted); margin-bottom: 0.5rem; margin-top: 1rem;">Food</h4>
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h5>Canned Food</h5>
+                        <p>Corned beef. Expiry date long gone.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-hunger)">+30
+                                Hunger</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Energy Bar</h5>
+                        <p>Stale, but calories are calories.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-hunger)">+15
+                                Hunger</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Rice (1 Cup)</h5>
+                        <p>Needs to be cooked. A staple.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-hunger)">+25
+                                Hunger</span><span class="data-tag">Needs Cooking</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Dried Fish</h5>
+                        <p>Salty and pungent. Lasts forever.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-hunger)">+20
+                                Hunger</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Rat Meat</h5>
+                        <p>Don't think about it. Just eat.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-hunger)">+20
+                                Hunger</span><span class="data-tag">Needs Cooking</span><span class="data-tag"
+                                style="color:var(--color-health)">+5% Inf. Risk</span></div>
+                    </div>
+                </div>
+
+                <h4 style="color: var(--wiki-muted); margin-top: 2rem; margin-bottom: 0.5rem;">Water</h4>
+                <div class="data-grid">
+                    <div class="data-card">
+                        <h5>Clean Water</h5>
+                        <p>Clear and safe. Treasure it.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-thirst)">+40
+                                Thirst</span></div>
+                    </div>
+                    <div class="data-card">
+                        <h5>Dirty Water</h5>
+                        <p>Murky. Risky. Better than nothing.</p>
+                        <div class="data-tags"><span class="data-tag" style="color:var(--color-thirst)">+30
+                                Thirst</span><span class="data-tag" style="color:var(--color-health)">+8% Inf.
+                                Risk</span></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
